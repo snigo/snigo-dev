@@ -1,0 +1,40 @@
+{
+  "name": "snigo - web developer",
+  "short_name": "snigo",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fafeff",
+  "description": "Aspiring web developer with passion to open source, modern web standards and UX-driven software design.",
+  "icons": [
+    {
+      "src": "images/ninja-icon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "images/ninja-icon-128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/ninja-icon-152.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "images/ninja-icon-167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "images/ninja-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/ninja-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
