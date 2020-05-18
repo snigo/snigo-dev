@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Montserrat:ital,wght@0,900;1,700&display=swap');
 
 :root {
   --accent-font-family: 'Montserrat', sans-serif;
@@ -48,9 +48,11 @@ body {
   height: 100%;
   min-height: calc(100vh - 2vw);
 
+  padding: 9em 0 2.5em 0;
+
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   background-color: white;
   border-radius: 12px;
@@ -61,7 +63,10 @@ body {
   max-width: 980px;
 
   height: 100%;
-  max-height: 980px;
+
+  @media screen and (max-width: 1016px) {
+    padding: 0 1em;
+  }
 }
 
 h1.title {
@@ -76,8 +81,8 @@ hr {
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-a,
-a:visited {
+a.fancy-link,
+a.fancy-link:visited {
   color: var(--colors-blue-50);
   margin-left: 2px;
   text-decoration: none;
@@ -85,7 +90,7 @@ a:visited {
   z-index: 1;
 }
 
-a:after {
+a.fancy-link:after {
   content: '';
   position: absolute;
   bottom: 2px;
@@ -98,61 +103,18 @@ a:after {
   z-index: -1;
 }
 
-a:hover:after,
-a:focus:after {
+a.fancy-link:hover:after,
+a.fancy-link:focus:after {
   height: 75%;
 }
 
-a:hover,
-a:focus {
+a.fancy-link:hover,
+a.fancy-link:focus {
   color: var(--colors-blue-80);
 }
 
-.dummy-card {
-  position: relative;
-  margin-top: 2.5em;
-
-  display: flex;
-
-  border-radius: 6px;
-  box-shadow: 0 0 64px #3f51b52f;
-
-  &::after {
-    content: '';
-    position: absolute;
-
-    top: 16px;
-    right: 16px;
-
-    width: 32px;
-    height: 32px;
-
-    background-image: url('/images/success.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-  }
-}
-
-.dummy-card-featured-image {
-  width: 160px;
-  height: 160px;
-
-  background: linear-gradient(160deg, #309dc180, #fc8f9580),
-    url('/images/domain.svg');
-  background-position: center, center;
-  background-repeat: no-repeat;
-  background-size: 100%, 50%;
-
-
-  border-top-left-radius: 6px;
-  border-bottom-left-radius: 6px;
-}
-
-.dummy-card-body {
-  padding: 0 1.4em;
-
-  & h3 {
-    color: var(--colors-blue-80);
-  }
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
 }

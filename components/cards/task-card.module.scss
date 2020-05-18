@@ -1,0 +1,241 @@
+.task-card {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+
+  border-radius: 6px;
+  box-shadow: 0 0 64px #3f51b52f;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.task-card-featured-image {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-basis: 272px;
+
+  padding: 20px;
+
+  background: linear-gradient(160deg, #309dc180, #fc8f9580);
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 0;
+
+  & img {
+    width: 80%;
+    opacity: 0.85;
+  }
+
+  @media screen and (max-width: 1016px) {
+    flex-basis: 214px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 0.65em;
+
+    max-height: 214px;
+
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 6px;
+
+    & img {
+      width: auto;
+      height: 214px;
+      object-fit: cover;
+    }
+  }
+}
+
+.task-card-body {
+  flex: 1;
+  padding: 0.65em 1.4em;
+}
+
+.task-card-body-timestamp {
+  font-size: 15px;
+  color: var(--colors-pink-40);
+}
+
+.task-card-body-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-card-body-title h3 {
+  margin: 0 0 0.75em 0;
+}
+
+.task-card-body-release-badge-container {
+  position: relative;
+  top: -0.85em;
+}
+
+.task-card-release-badge {
+  & a,
+  & a:visited,
+  & a:active {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    padding: 0 8px;
+  
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+
+    border: none;
+    outline: none;
+    background-color: #02caa9;
+    border-bottom: 4px solid #02bb9c;
+    border-radius: 4px;
+
+    transition: all 0.2s cubic-bezier(0.19, 1, 0.22, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 2px #02caa940;
+      filter: brightness(105%);
+      border-bottom: 5px solid #02bb9c;
+    }
+  }
+}
+
+.task-card-release-badge-check-symbol {
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+.task-card-body-description {
+  margin-bottom: 1.1em;
+}
+
+.task-card-body-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 1.1em;
+}
+
+.task-card-tech-badge {
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding: 0 5px;
+
+  color: var(--colors-blue-50);
+  font-size: 13px;
+
+  border: 1px solid var(--colors-blue-50);
+  border-radius: 4px;
+}
+
+.task-card-body-expand-control {
+  & button {
+    color: var(--colors-blue-50);
+    font-size: 13px;
+    line-height: 1;
+
+    padding: 8px 16px;
+    
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #06a0fc12;
+    }
+
+    &:focus {
+      background-color: #06a0fc12;
+      box-shadow: 0 0 0 2px #06a0fc40;
+    }
+  }
+}
+
+.task-card-body-expand-arrow-hide {
+  margin-left: 8px;
+  display: inline-block;
+  font-size: 11px;
+  transform: rotate(-90deg);
+}
+
+.task-card-body-expand-arrow-show {
+  margin-left: 8px;
+  display: inline-block;
+  font-size: 11px;
+  transform: rotate(90deg);
+}
+
+.task-card-expand-section {
+  margin-top: 0.65em;
+  padding: 0 4px 4px 4px;
+
+  background-color: #06a0fc12;
+  border-top: 4px solid #4aeeff2a;
+  border-radius: 6px;
+}
+
+.task-card-expand-section-tabs {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+.task-card-expand-section-tab {
+
+  & button {
+    font-size: 13px;
+    line-height: 1;
+
+    padding: 8px 16px;
+    
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: 0 0 16px #06a0fc40;
+
+    transition: all 0.2s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    &:hover {
+      cursor: pointer;
+      background-color: #06a0fc12;
+    }
+
+    &:focus {
+      background-color: #06a0fc12;
+      box-shadow: 0 0 0 2px #06a0fc40;
+    }
+
+    &[data-active="true"] {
+      position: relative;
+      background-color: white;
+      color: var(--colors-blue-50);
+      z-index: 5;
+    }
+
+    &[data-active="false"] {
+      color: #1a1e1f80;
+
+      &:hover,
+      &:focus {
+        color: #1a1e1f;
+      }
+    }
+  }
+}
+
+.task-card-expand-section-body {
+  position: relative;
+  padding: 1em;
+  background-color: white;
+  z-index: 10;
+}
