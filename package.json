@@ -21,6 +21,7 @@
   "homepage": "https://github.com/snigo/snigo-dev#readme",
   "dependencies": {
     "next": "^9.4.0",
+    "next-offline": "^5.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "sass": "^1.26.5"

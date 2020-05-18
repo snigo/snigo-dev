@@ -44,7 +44,7 @@
         "As user, I can use website on every modern device and screen size",
         "As user, I can see daily task, user stories and change log, as well as technologies used",
         "As user, I can go to each day's release and compare logs from website, as well as from CHANGELOG.md on github",
-        "As @snigo, I never have to change both relative and absolute dates on the chellenge"
+        "As @snigo, I never have to change both relative and absolute dates for the challenges"
       ],
       "changelog": [
         {

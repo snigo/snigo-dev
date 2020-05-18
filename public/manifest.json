@@ -1,9 +1,11 @@
 {
-  "name": "snigo - web developer",
-  "short_name": "snigo",
-  "start_url": ".",
+  "name": "@snigo - web developer",
+  "short_name": "@snigo",
+  "lang": "en-US",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#fafeff",
+  "theme_color": "#fafeff",
   "description": "Aspiring web developer with passion to open source, modern web standards and UX-driven software design.",
   "icons": [
     {
