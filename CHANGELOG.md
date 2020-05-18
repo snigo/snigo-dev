@@ -20,4 +20,5 @@ All notable changes to this project will be documented in this file.
 - Configuration of domain name
 - Continuous integration / deployment from github repository
 
-[0.0.1]: https://github.com/snigo/snigo-dev/releases/tag/v0.1.0
+[0.1.0]: https://github.com/snigo/snigo-dev/releases/tag/v0.1.0
+[0.2.0]: https://github.com/snigo/snigo-dev/compare/v0.1.0...v0.2.0

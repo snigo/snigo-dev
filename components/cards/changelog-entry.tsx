@@ -14,7 +14,7 @@ const Changelog: FunctionComponent<ChangelogProps> = ({ entry }) => {
   return (
     <div className={css['changelog-entry']}>
       <div className={css['changelog-entry-version']} key={entry.version}>
-        <a href={entry.url} className="fancy-link">{entry.version}</a>
+        <a href={entry.url} className="fancy-link">{`v${entry.version}`}</a>
         <span>
           [
           <time dateTime={_date.toISOString()}>{entry.date}</time>
