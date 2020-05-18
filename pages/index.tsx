@@ -19,6 +19,8 @@ const Index = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link rel="icon" type="image/svg+xml" href="/images/ninja-icon.svg" />
       <link rel="alternate icon" href="/images/ninja-icon-32.png" />
+      <meta name="description" content="@snigo is an aspiring web developer with passion to open source, modern web standards and UX-driven software design."/>
+      <meta name="keywords" content="graphic design, web design, website design, website builder, web developer, web designer, webdesign, ecommerce website, web design company, website creator, website designer, responsive web design, web development company, best website design, web design software, web page design, build a website, design website, web design inspiration, website layout, react website, react developer" />
     </Head>
     <div className="wrapper">
       <h1 className="title">Hi, I'm @snigo<span style={{color: 'var(--colors-blue-50'}}>.</span></h1>

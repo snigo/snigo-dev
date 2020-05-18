@@ -2,6 +2,8 @@ import { FunctionComponent, useState } from 'react';
 
 import css from './task-card.module.scss';
 import { DayTask } from '../../types/daytask.interface';
+import StoryList from './story-list';
+import Changelog from './changelog-entry';
 
 interface TaskCardProps {
   task: DayTask,
@@ -109,9 +111,13 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
                   (() => {
                     switch (expandedActive) {
                       case 0:
-                        return <span>User Stories</span>
+                        return <StoryList stories={userStories} />;
                       case 1:
-                        return <span>Changelog</span>
+                        return (
+                          changelog.map((log) => (
+                            <Changelog entry={log} key={log.version} />
+                          ))
+                        );
                       default:
                         return false;
                     }

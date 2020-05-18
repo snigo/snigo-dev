@@ -46,7 +46,27 @@
         "As user, I can go to each day's release and compare logs from website, as well as from CHANGELOG.md on github",
         "As @snigo, I never have to change both relative and absolute dates on the chellenge"
       ],
-      "changelog": [],
+      "changelog": [
+        {
+          "version": "0.2.0",
+          "date": "2020-05-18",
+          "url": "https://github.com/snigo/snigo-dev/compare/v0.1.0...v0.2.0",
+          "log": {
+            "added": [
+              "Pre-push git hook that bumps version and updates changelog prior to deployment",
+              "Website keywords and description",
+              "Script that automatically changes relative day of the challenge",
+              "Changelog and user stories tabs for the task card"
+            ],
+            "changed": [
+              "Day task is switched from dummy to reusable component"
+            ],
+            "fixed": [
+              "Website is now more responsive"
+            ]
+          }
+        }
+      ],
       "technologies": [
         "git",
         "bash",
@@ -55,7 +75,7 @@
         "typescript",
         "sass"
       ],
-      "release": ""
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.2.0"
     }
   ]
 }

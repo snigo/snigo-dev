@@ -1,0 +1,34 @@
+.story-list {
+  margin: 0;
+  padding: 0 1.45em;
+  list-style: none;
+}
+
+.story-list-item {
+  position: relative;
+  margin-bottom: 0.85em;
+
+  font-size: 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: -20px;
+    width: 12px;
+    height: 4px;
+
+    background-color: var(--colors-blue-30);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: -16px;
+    width: 4px;
+    height: 12px;
+
+    background-color: var(--colors-blue-30);
+  }
+}

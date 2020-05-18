@@ -1,0 +1,10 @@
+.changelog-entry-version {
+  & a {
+    font-size: 32px;
+  }
+
+  & span {
+    margin-left: 20px;
+    color: var(--colors-pink-40);
+  }
+}
