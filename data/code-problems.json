@@ -102,6 +102,9 @@
               "Website footer",
               "Animation for details section of the task card (Work in progress)"
             ],
+            "changed": [
+              "Color contrast of interactive elements was increassed to comply with WCAG recomendations"
+            ],
             "fixed": [
               "Minor fixes for smaller screens and bottom margin",
               "Word wrapping issue with long urls in the changelog"
