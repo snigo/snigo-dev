@@ -197,13 +197,15 @@
   height: 0;
   max-height: 0;
   overflow: hidden;
-  transform: scale(0);
+  transform: scale(0.75);
+  opacity: 0;
 }
 
 .task-card-expand-section-show {
   height: auto;
   max-height: 1000vh;
   transform: scale(1);
+  opacity: 1;
 }
 
 .task-card-expand-section-tabs {

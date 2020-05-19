@@ -84,6 +84,7 @@
       "featuredImage": "/images/tasks/079-speed.svg",
       "userStories": [
         "*As user*, I can use website offline",
+        "*As user*, I can use save website to home screen and use it as standalone app",
         "*As user*, I can use website on small screens with up to 272px minimum viewport width",
         "*As user*, I can see the ways to contact @snigo",
         "*As @snigo*, I can start developing, uploading and showcasing projects as of tomorrow"
@@ -110,6 +111,7 @@
       ],
       "technologies": [
         "pwa",
+        "workbox",
         "markdown",
         "react",
         "next.js",
