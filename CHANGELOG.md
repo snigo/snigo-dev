@@ -1,6 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.3.0] - 2020-05-19
+### Added
+- PWA offline support using [workbox](https://developers.google.com/web/tools/workbox)
+- Markdown support for user stories and changelog tabs
+- Topbar with contact information
+- Website footer
+- Animation for details section of the task card (Work in progress)
+
+### Changed
+- Color contrast of interactive elements was increassed to comply with WCAG recomendations
+
+### Fixed
+- Minor fixes for smaller screens and bottom margin
+- Word wrapping issue with long urls in the changelog
+
 ## [0.2.0] - 2020-05-18
 ### Added
 - Pre-push git hook that bumps version and updates changelog prior to deployment

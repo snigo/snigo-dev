@@ -9,6 +9,8 @@
   --colors-blue-50: #1a89e9;
   --colors-pink-40: #e74b7d;
 
+  --focus-outline-primary: 0 0 0 2px #06a0fc40;
+
 }
 
 ::selection {
@@ -49,37 +51,42 @@ body {
 }
 
 .shell {
+  position: relative;
+
   width: 100%;
   height: 100%;
   min-height: calc(100vh - 2vw);
 
   margin-bottom: 1vw;
-  padding: 9em 0 2.5em 0;
+  padding: 2em 0 2.5em 0;
 
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 
   background-color: white;
   border-radius: 12px;
 
   @media screen and (max-width: 414px) {
-    padding: 6em 0 1em 0;
+    padding: 0 0 4.5em 0;
   }
 }
 
 .wrapper {
+  margin-bottom: 1.1em;
+  padding: 7.5em 0 0 0;
   width: 100%;
   max-width: 980px;
 
   height: 100%;
 
   @media screen and (max-width: 1016px) {
-    padding: 0 1em;
+    padding: 7.5em 1em 0 1em;
   }
 
   @media screen and (max-width: 414px) {
-    padding: 0 0.5em;
+    padding: 4.5em 0.5em 0 0.5em;
   }
 }
 
@@ -103,7 +110,6 @@ hr {
 a.fancy-link,
 a.fancy-link:visited {
   color: var(--colors-blue-50);
-  margin-left: 2px;
   text-decoration: none;
   position: relative;
   z-index: 1;
@@ -136,4 +142,22 @@ a.fancy-link:focus {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+}
+
+footer {
+  position: absolute;
+  padding: 1.25em 0.35em 1.25em 1.25em;
+  width: 100%;
+  max-width: 980px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: #83868f;
+  text-align: center;
+  font-size: 13px;
+
+  @media screen and (max-width: 414) {
+    font-size: 11px;
+  }
 }

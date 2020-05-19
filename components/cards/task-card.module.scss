@@ -190,6 +190,8 @@
   border-top: 4px solid #4aeeff2a;
   border-radius: 6px;
 
+  overflow-y: scroll;
+
   transition: all 0.2s ease-in-out;
 }
 
@@ -203,7 +205,7 @@
 
 .task-card-expand-section-show {
   height: auto;
-  max-height: 1000vh;
+  max-height: 100vh;
   transform: scale(1);
   opacity: 1;
 }

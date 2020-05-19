@@ -1,0 +1,14 @@
+.pulsing-heart {
+  position: relative;
+  top: 1px;
+  font-style: normal;
+  text-decoration: none;
+  color: var(--colors-pink-40);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  10% {
+    transform: scale(2);
+  }
+}
