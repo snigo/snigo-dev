@@ -1,11 +1,12 @@
 import Head from 'next/head';
+import { useRef, useEffect, useState } from 'react';
+
+import TaskCard from '../components/cards/task-card';
+import PulsingHeart from '../components/animation/pulsing-heart';
+import Topbar from '../components/topbar/topbar';
+import { DayTask } from '../types/daytask.interface';
 
 import { projects } from '../data/code-problems.json';
-import TaskCard from '../components/cards/task-card';
-import { DayTask } from '../types/daytask.interface';
-import PulsingHeart from '../components/animation/pulsing-heart';
-import { useRef, useEffect, useState } from 'react';
-import Topbar from '../components/topbar/topbar';
 
 const START_DATE = new Date('2020-05-17');
 
@@ -44,7 +45,7 @@ const Index = () => {
         <hr/>
         <div className="project-grid">
           {
-            projects.reverse().map((task) => <TaskCard task={task as DayTask} key={task.date} />)
+            projects.map((task) => <TaskCard task={task as DayTask} key={task.date} />)
           }
         </div>
       </div>

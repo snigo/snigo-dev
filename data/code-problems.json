@@ -1,83 +1,6 @@
 {
   "projects": [
     {
-      "date": "2020-05-17",
-      "version": "0.1.0",
-      "job": "Register domain name and publish dummy screen on the Internet",
-      "featuredImage": "/images/tasks/008-programmer.svg",
-      "userStories": [
-        "*As user*, I can see @snigo's portfolio on https://snigo.dev",
-        "*As @snigo*, I can build and deploy by pushing to master on https://github.com/snigo/snigo-dev",
-        "*As browser*, I can see favicon, basic website description"
-      ],
-      "changelog": [
-        {
-          "version": "0.1.0",
-          "date": "2020-05-17",
-          "url": "https://github.com/snigo/snigo-dev/releases/tag/v0.1.0",
-          "log": {
-            "added": [
-              "Initial setup of typescript and sass environment for Next.js",
-              "Configuration of domain name",
-              "Continuous integration / deployment from [github repository](https://github.com/snigo/snigo-dev/)"
-            ]
-          }
-        }
-      ],
-      "technologies": [
-        "dns",
-        "ci",
-        "cd",
-        "react",
-        "next.js",
-        "typescript",
-        "sass"
-      ],
-      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.1.0"
-    },
-    {
-      "date": "2020-05-18",
-      "version": "0.2.0",
-      "job": "Automate changelog, make a proper day task card and fix responsiveness",
-      "featuredImage": "/images/tasks/096-history.svg",
-      "userStories": [
-        "*As user*, I can use website on every modern device and screen size",
-        "*As user*, I can see daily task, user stories and change log, as well as technologies used",
-        "*As user*, I can go to each day's release and compare logs from website, as well as from [CHANGELOG.md](https://github.com/snigo/snigo-dev/blob/master/CHANGELOG.md) on github",
-        "*As @snigo*, I never have to change both relative and absolute dates for the challenges"
-      ],
-      "changelog": [
-        {
-          "version": "0.2.0",
-          "date": "2020-05-18",
-          "url": "https://github.com/snigo/snigo-dev/compare/v0.1.0...v0.2.0",
-          "log": {
-            "added": [
-              "Pre-push git hook that bumps version and updates changelog prior to deployment",
-              "Website keywords and description",
-              "Script that automatically changes relative day of the challenge",
-              "Changelog and user stories tabs for the task card"
-            ],
-            "changed": [
-              "Day task is switched from dummy to reusable component"
-            ],
-            "fixed": [
-              "Website is now more responsive"
-            ]
-          }
-        }
-      ],
-      "technologies": [
-        "git",
-        "bash",
-        "react",
-        "next.js",
-        "typescript",
-        "sass"
-      ],
-      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.2.0"
-    },
-    {
       "date": "2020-05-19",
       "version": "0.3.0",
       "job": "Convert to PWA, introduce topbar and footer and prepare layout for navigation and routing",
@@ -122,6 +45,83 @@
         "sass"
       ],
       "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.3.0"
+    },
+    {
+      "date": "2020-05-18",
+      "version": "0.2.0",
+      "job": "Automate changelog, make a proper day task card and fix responsiveness",
+      "featuredImage": "/images/tasks/096-history.svg",
+      "userStories": [
+        "*As user*, I can use website on every modern device and screen size",
+        "*As user*, I can see daily task, user stories and change log, as well as technologies used",
+        "*As user*, I can go to each day's release and compare logs from website, as well as from [CHANGELOG.md](https://github.com/snigo/snigo-dev/blob/master/CHANGELOG.md) on github",
+        "*As @snigo*, I never have to change both relative and absolute dates for the challenges"
+      ],
+      "changelog": [
+        {
+          "version": "0.2.0",
+          "date": "2020-05-18",
+          "url": "https://github.com/snigo/snigo-dev/compare/v0.1.0...v0.2.0",
+          "log": {
+            "added": [
+              "Pre-push git hook that bumps version and updates changelog prior to deployment",
+              "Website keywords and description",
+              "Script that automatically changes relative day of the challenge",
+              "Changelog and user stories tabs for the task card"
+            ],
+            "changed": [
+              "Day task is switched from dummy to reusable component"
+            ],
+            "fixed": [
+              "Website is now more responsive"
+            ]
+          }
+        }
+      ],
+      "technologies": [
+        "git",
+        "bash",
+        "react",
+        "next.js",
+        "typescript",
+        "sass"
+      ],
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.2.0"
+    },
+    {
+      "date": "2020-05-17",
+      "version": "0.1.0",
+      "job": "Register domain name and publish dummy screen on the Internet",
+      "featuredImage": "/images/tasks/008-programmer.svg",
+      "userStories": [
+        "*As user*, I can see @snigo's portfolio on https://snigo.dev",
+        "*As @snigo*, I can build and deploy by pushing to master on https://github.com/snigo/snigo-dev",
+        "*As browser*, I can see favicon, basic website description"
+      ],
+      "changelog": [
+        {
+          "version": "0.1.0",
+          "date": "2020-05-17",
+          "url": "https://github.com/snigo/snigo-dev/releases/tag/v0.1.0",
+          "log": {
+            "added": [
+              "Initial setup of typescript and sass environment for Next.js",
+              "Configuration of domain name",
+              "Continuous integration / deployment from [github repository](https://github.com/snigo/snigo-dev/)"
+            ]
+          }
+        }
+      ],
+      "technologies": [
+        "dns",
+        "ci",
+        "cd",
+        "react",
+        "next.js",
+        "typescript",
+        "sass"
+      ],
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.1.0"
     }
   ]
 }
