@@ -6,9 +6,9 @@
       "job": "Register domain name and publish dummy screen on the Internet",
       "featuredImage": "/images/tasks/008-programmer.svg",
       "userStories": [
-        "As user, I can see @snigo's portfolio on https://snigo.dev",
-        "As @snigo, I can build and deploy by pushing to master on https://github.com/snigo/snigo-dev",
-        "As browser, I can see favicon, basic website description"
+        "*As user*, I can see @snigo's portfolio on https://snigo.dev",
+        "*As @snigo*, I can build and deploy by pushing to master on https://github.com/snigo/snigo-dev",
+        "*As browser*, I can see favicon, basic website description"
       ],
       "changelog": [
         {
@@ -19,7 +19,7 @@
             "added": [
               "Initial setup of typescript and sass environment for Next.js",
               "Configuration of domain name",
-              "Continuous integration / deployment from github repository"
+              "Continuous integration / deployment from [github repository](https://github.com/snigo/snigo-dev/)"
             ]
           }
         }
@@ -41,10 +41,10 @@
       "job": "Automate changelog, make a proper day task card and fix responsiveness",
       "featuredImage": "/images/tasks/096-history.svg",
       "userStories": [
-        "As user, I can use website on every modern device and screen size",
-        "As user, I can see daily task, user stories and change log, as well as technologies used",
-        "As user, I can go to each day's release and compare logs from website, as well as from CHANGELOG.md on github",
-        "As @snigo, I never have to change both relative and absolute dates for the challenges"
+        "*As user*, I can use website on every modern device and screen size",
+        "*As user*, I can see daily task, user stories and change log, as well as technologies used",
+        "*As user*, I can go to each day's release and compare logs from website, as well as from [CHANGELOG.md](https://github.com/snigo/snigo-dev/blob/master/CHANGELOG.md) on github",
+        "*As @snigo*, I never have to change both relative and absolute dates for the challenges"
       ],
       "changelog": [
         {
@@ -76,6 +76,47 @@
         "sass"
       ],
       "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.2.0"
+    },
+    {
+      "date": "2020-05-19",
+      "version": "0.3.0",
+      "job": "Convert to PWA, introduce topbar and footer and prepare layout for navigation and routing",
+      "featuredImage": "/images/tasks/079-speed.svg",
+      "userStories": [
+        "*As user*, I can use website offline",
+        "*As user*, I can use website on small screens with up to 272px minimum viewport width",
+        "*As user*, I can see the ways to contact @snigo",
+        "*As @snigo*, I can start developing, uploading and showcasing projects as of tomorrow"
+      ],
+      "changelog": [
+        {
+          "version": "0.3.0",
+          "date": "2020-05-19",
+          "url": "https://github.com/snigo/snigo-dev/compare/v0.2.0...v0.3.0",
+          "log": {
+            "added": [
+              "PWA offline support using [workbox](https://developers.google.com/web/tools/workbox)",
+              "Markdown support for user stories and changelog tabs",
+              "Topbar with contact information",
+              "Website footer",
+              "Animation for details section of the task card (Work in progress)"
+            ],
+            "fixed": [
+              "Minor fixes for smaller screens and bottom margin",
+              "Word wrapping issue with long urls in the changelog"
+            ]
+          }
+        }
+      ],
+      "technologies": [
+        "pwa",
+        "markdown",
+        "react",
+        "next.js",
+        "typescript",
+        "sass"
+      ],
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.3.0"
     }
   ]
 }

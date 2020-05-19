@@ -1,10 +1,28 @@
 .changelog-entry-version {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  align-items: baseline;
+  gap: 20px;
   & a {
     font-size: 32px;
   }
 
   & span {
-    margin-left: 20px;
     color: var(--colors-pink-40);
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 414px) {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}
+
+.changelog-entry-change-list {
+  margin: 0;
+  padding: 0 1.5em;
+
+  @media screen and (max-width: 414px) {
+    padding: 0 0 0 1em;
   }
 }

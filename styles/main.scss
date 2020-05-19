@@ -41,6 +41,11 @@ body {
 
   color: #1a1e1f;
   background-color: var(--colors-blue-30);
+
+  @media screen and (max-width: 414px) {
+    font-size: 17px;
+    line-height: 1.45;
+  }
 }
 
 .shell {
@@ -48,6 +53,7 @@ body {
   height: 100%;
   min-height: calc(100vh - 2vw);
 
+  margin-bottom: 1vw;
   padding: 9em 0 2.5em 0;
 
   display: flex;
@@ -56,6 +62,10 @@ body {
 
   background-color: white;
   border-radius: 12px;
+
+  @media screen and (max-width: 414px) {
+    padding: 6em 0 1em 0;
+  }
 }
 
 .wrapper {
@@ -67,11 +77,20 @@ body {
   @media screen and (max-width: 1016px) {
     padding: 0 1em;
   }
+
+  @media screen and (max-width: 414px) {
+    padding: 0 0.5em;
+  }
 }
 
 h1.title {
   font-family: var(--accent-font-family);
   font-size: 36px;
+  line-height: 1.15;
+
+  @media screen and (max-width: 414px) {
+    font-size: 28px;
+  }
 }
 
 hr {
@@ -116,5 +135,5 @@ a.fancy-link:focus {
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5em;
+  gap: 20px;
 }

@@ -84,49 +84,51 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
             </span>
           </button>
         </div>
-        {
-          expanded && (
-            <section className={css["task-card-expand-section"]}>
-              <ul className={css["task-card-expand-section-tabs"]}>
-                {
-                  EXPANDED_TABS.map((tab, i) => (
-                    <li
-                      className={css["task-card-expand-section-tab"]}
-                      key={tab.trim().toLowerCase().replace(/\s+/g, '-')}
-                    >
-                      <button
-                        type="button"
-                        aria-pressed={i === expandedActive}
-                        data-active={i === expandedActive}
-                        onClick={() => _setExpandedActive(i)}
+        <section className={`${css["task-card-expand-section"]} ${css[`task-card-expand-section-${expanded ? 'show' : 'hide'}`]}`}>
+          {
+            expanded && (
+              <>
+                <ul className={css["task-card-expand-section-tabs"]}>
+                  {
+                    EXPANDED_TABS.map((tab, i) => (
+                      <li
+                        className={css["task-card-expand-section-tab"]}
+                        key={tab.trim().toLowerCase().replace(/\s+/g, '-')}
                       >
-                        {tab}
-                      </button>
-                    </li>
-                  ))
-                }
-              </ul>
-              <div className={css["task-card-expand-section-body"]}>
-                {
-                  (() => {
-                    switch (expandedActive) {
-                      case 0:
-                        return <StoryList stories={userStories} />;
-                      case 1:
-                        return (
-                          changelog.map((log) => (
-                            <Changelog entry={log} key={log.version} />
-                          ))
-                        );
-                      default:
-                        return false;
-                    }
-                  })()
-                }
-              </div>
-            </section>
-          )
-        }
+                        <button
+                          type="button"
+                          aria-pressed={i === expandedActive}
+                          data-active={i === expandedActive}
+                          onClick={() => _setExpandedActive(i)}
+                        >
+                          {tab}
+                        </button>
+                      </li>
+                    ))
+                  }
+                </ul>
+                <div className={css["task-card-expand-section-body"]}>
+                  {
+                    (() => {
+                      switch (expandedActive) {
+                        case 0:
+                          return <StoryList stories={userStories} />;
+                        case 1:
+                          return (
+                            changelog.map((log) => (
+                              <Changelog entry={log} key={log.version} />
+                            ))
+                          );
+                        default:
+                          return false;
+                      }
+                    })()
+                  }
+                </div>
+              </>
+            )
+          }
+        </section>
       </div>
     </div>
   );

@@ -14,19 +14,23 @@ const Changelog: FunctionComponent<ChangelogProps> = ({ entry }) => {
   return (
     <div className={css['changelog-entry']}>
       <div className={css['changelog-entry-version']} key={entry.version}>
-        <a href={entry.url} className="fancy-link" target="_blank" rel="noreferrer noopener">
-          {`v${entry.version}`}
-        </a>
-        <span>
-          [
-          <time dateTime={_date.toISOString()}>{entry.date}</time>
-          ]
-        </span>
+        <div>
+          <a href={entry.url} className="fancy-link" target="_blank" rel="noreferrer noopener">
+            {`v${entry.version}`}
+          </a>
+        </div>
+        <div>
+          <span>
+            [
+            <time dateTime={_date.toISOString()}>{entry.date}</time>
+            ]
+          </span>
+        </div>
       </div>
       <ul className={css['changelog-entry-change-list']}>
         {
           Object.keys(entry.log).map((key) => (
-            <li className={css['changelog-entry-change-list']} key={`${key}-${uuid(9)}`}>
+            <li className={css['changelog-entry-change-list-item']} key={`${key}-${uuid(9)}`}>
               <h4>{`${key}:`}</h4>
               <StoryList stories={entry.log[key]} />
             </li>

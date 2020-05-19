@@ -54,11 +54,20 @@
 .task-card-body {
   flex: 1;
   padding: 0.65em 1.4em;
+  overflow: hidden;
+
+  @media screen and (max-width: 414px) {
+    padding: 0.65em 0.85em;
+  }
 }
 
 .task-card-body-timestamp {
   font-size: 15px;
   color: var(--colors-pink-40);
+
+  @media screen and (max-width: 414px) {
+    font-size: 13px;
+  }
 }
 
 .task-card-body-header {
@@ -180,12 +189,37 @@
   background-color: #06a0fc12;
   border-top: 4px solid #4aeeff2a;
   border-radius: 6px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.task-card-expand-section-hide {
+  height: 0;
+  max-height: 0;
+  overflow: hidden;
+  transform: scale(0);
+}
+
+.task-card-expand-section-show {
+  height: auto;
+  max-height: 1000vh;
+  transform: scale(1);
 }
 
 .task-card-expand-section-tabs {
+  position: relative;
+  top: 1px;
+
   margin: 0;
+  padding: 0 1em;
   display: flex;
+  align-items: stretch;
+
   list-style: none;
+
+  @media screen and (max-width: 414px) {
+    padding: 0;
+  }
 }
 
 .task-card-expand-section-tab {
@@ -194,6 +228,7 @@
     font-size: 13px;
     line-height: 1;
 
+    height: 100%;
     padding: 8px 16px;
     
     background-color: transparent;
@@ -238,4 +273,8 @@
   padding: 1em;
   background-color: white;
   z-index: 10;
+  
+  @media screen and (max-width: 414px) {
+    padding: 1em 0.5em;
+  }
 }
