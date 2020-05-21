@@ -1,9 +1,45 @@
 {
   "projects": [
     {
+      "date": "2020-05-20",
+      "version": "0.4.0",
+      "description": "Build Lapchart - stopwatch with visualisation chart",
+      "taskType": "project",
+      "featuredImage": "/images/tasks/101-stopwatch.svg",
+      "userStories": [
+        "*As user*, I measure laps usign lapchart app",
+        "*As user*, I can use Lapchart app offline and save it to home screen as standalone app",
+        "*As user*, I can see visualization chart after I hit Stop button",
+        "*As user*, I can see my best and worst lap"
+      ],
+      "changelog": [
+        {
+          "version": "0.4.0",
+          "date": "2020-05-19",
+          "url": "https://github.com/snigo/snigo-dev/compare/v0.3.0...v0.4.0",
+          "log": {
+            "added": [
+              "Project type cards with links to the project live demo and source code"
+            ]
+          }
+        }
+      ],
+      "technologies": [
+        "d3.js",
+        "react",
+        "next.js",
+        "typescript",
+        "sass"
+      ],
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.4.0",
+      "liveDemo": "https://lapchart.snigo.dev/",
+      "sourceCode": "https://github.com/snigo/lapchart"
+    },
+    {
       "date": "2020-05-19",
       "version": "0.3.0",
-      "job": "Convert to PWA, introduce topbar and footer and prepare layout for navigation and routing",
+      "description": "Convert to PWA, introduce topbar and footer and prepare layout for navigation and routing",
+      "taskType": "task",
       "featuredImage": "/images/tasks/079-speed.svg",
       "userStories": [
         "*As user*, I can use website offline",
@@ -49,7 +85,8 @@
     {
       "date": "2020-05-18",
       "version": "0.2.0",
-      "job": "Automate changelog, make a proper day task card and fix responsiveness",
+      "description": "Automate changelog, make a proper day task card and fix responsiveness",
+      "taskType": "task",
       "featuredImage": "/images/tasks/096-history.svg",
       "userStories": [
         "*As user*, I can use website on every modern device and screen size",
@@ -91,7 +128,8 @@
     {
       "date": "2020-05-17",
       "version": "0.1.0",
-      "job": "Register domain name and publish dummy screen on the Internet",
+      "description": "Register domain name and publish dummy screen on the Internet",
+      "taskType": "task",
       "featuredImage": "/images/tasks/008-programmer.svg",
       "userStories": [
         "*As user*, I can see @snigo's portfolio on https://snigo.dev",

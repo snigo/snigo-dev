@@ -144,10 +144,17 @@
 }
 
 .task-card-body-expand-control {
-  & button {
+  & button,
+  & a,
+  & a:active,
+  & a:visited {
+    display: inline-block;
+
     color: var(--colors-blue-50);
-    font-size: 13px;
+    font-family: var(--primaty-font-family);
+    font-size: 15px;
     line-height: 1;
+    text-decoration: none;
 
     padding: 8px 16px;
     
@@ -166,6 +173,8 @@
       box-shadow: 0 0 0 2px #06a0fc40;
     }
   }
+
+  
 }
 
 .task-card-body-expand-arrow-hide {
@@ -205,7 +214,7 @@
 
 .task-card-expand-section-show {
   height: auto;
-  max-height: 100vh;
+  max-height: 250vh;
   transform: scale(1);
   opacity: 1;
 }

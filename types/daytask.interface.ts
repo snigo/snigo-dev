@@ -11,9 +11,12 @@ export interface DayTask {
   date: string;
   version: string;
   featuredImage: string;
-  job: string;
-  userStories: string[];
-  changelog: ChangelogEntry[];
+  description: string;
+  taskType?: string;
+  userStories?: string[];
+  changelog?: ChangelogEntry[];
   technologies: string[];
-  release: string;
+  release?: string;
+  liveDemo?: string;
+  sourceCode?: string;
 }

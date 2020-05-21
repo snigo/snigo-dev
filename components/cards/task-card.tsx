@@ -13,11 +13,14 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
   const {
     date,
     featuredImage,
-    job,
+    description,
+    taskType,
     userStories,
     changelog,
     technologies,
     release,
+    liveDemo,
+    sourceCode,
   } = task;
 
   const [expanded, _setExpanded] = useState(false);
@@ -36,7 +39,7 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
   return (
     <div className={css["task-card"]}>
       <div className={css["task-card-featured-image"]}>
-        { featuredImage && <img src={featuredImage} alt={job} /> }
+        { featuredImage && <img src={featuredImage} alt={description} /> }
       </div>
       <div className={css["task-card-body"]}>
         <div className={css["task-card-body-timestamp"]}>
@@ -44,7 +47,7 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
         </div>
         <div className={css["task-card-body-header"]}>
           <div className={css["task-card-body-title"]}>
-            <h3>Task:</h3>
+            <h3>{`${taskType.replace(/^\w/, (c) => c.toUpperCase())}:`}</h3>
           </div>
           <div className={css["task-card-body-release-badge-container"]}>
             { release && (
@@ -58,7 +61,7 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
           </div>
         </div>
         <div className={css["task-card-body-description"]}>
-          {job}
+          {description}
         </div>
         <div className={css["task-card-body-technologies"]}>
           {
@@ -73,6 +76,8 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
           }
         </div>
         <div className={css["task-card-body-expand-control"]}>
+          {liveDemo && <a href={liveDemo} target="_blank" rel="noreferrer noopener" className={`${css["task-card-action-link"]} ${css["live-demo-button"]}`}>Live Demo</a>}
+          {sourceCode && <a href={sourceCode} target="_blank" rel="noreferrer noopener" className={`${css["task-card-action-link"]} ${css["source-code-button"]}`}>Source Code</a>}
           <button
             type="button"
             aria-pressed={expanded}

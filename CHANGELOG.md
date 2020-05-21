@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.4.0] - 2020-05-20
+### Added
+- Project type cards with links to the project live demo and source code
+
 ## [0.3.0] - 2020-05-19
 ### Added
 - PWA offline support using [workbox](https://developers.google.com/web/tools/workbox)
@@ -37,3 +41,5 @@ All notable changes to this project will be documented in this file.
 
 [0.1.0]: https://github.com/snigo/snigo-dev/releases/tag/v0.1.0
 [0.2.0]: https://github.com/snigo/snigo-dev/compare/v0.1.0...v0.2.0
+[0.3.0]: https://github.com/snigo/snigo-dev/compare/v0.2.0...v0.3.0
+[0.4.0]: https://github.com/snigo/snigo-dev/compare/v0.3.0...v0.4.0
