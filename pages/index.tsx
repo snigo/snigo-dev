@@ -36,6 +36,17 @@ const Index = () => {
         <title>@snigo: with love to the web.</title>
         <meta name="description" content="@snigo is an aspiring web developer with passion to open source, modern web standards and UX-driven software design."/>
         <meta name="keywords" content="graphic design, web design, website design, website builder, web developer, web designer, webdesign, ecommerce website, web design company, website creator, website designer, responsive web design, web development company, best website design, web design software, web page design, build a website, design website, web design inspiration, website layout, react website, react developer" />
+        <meta property="og:url" content="https://snigo.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="@snigo's home" />
+        <meta property="og:description" content="Aspiring web developer with passion to open source, modern web standards and UX-driven software design." />
+        <meta property="og:image" content="https://snigo.dev/images/snigo-featured-image.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="https://snigo.dev" />
+        <meta name="twitter:creator" content="@snigosayshi" />
+        <meta name="twitter:title" content="@snigo's home" />
+        <meta name="twitter:description" content="Aspiring web developer with passion to open source, modern web standards and UX-driven software design." />
+        <meta name="twitter:image" content="https://snigo.dev/images/snigo-featured-image.png" />
       </Head>
       <Topbar fixed={topbarFixed} />
       <div className="wrapper">

@@ -25,6 +25,8 @@
   border-bottom-left-radius: 6px;
   border-top-right-radius: 0;
 
+  overflow: hidden;
+
   & img {
     width: 80%;
     opacity: 0.85;
@@ -174,7 +176,7 @@
     }
   }
 
-  
+
 }
 
 .task-card-body-expand-arrow-hide {
