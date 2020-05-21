@@ -1,6 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [0.5.0] - 2020-05-21
+
+### Added
+- Rich data meta: JSON-LD script, open graph and twitter card details
+Can be tested here: 
+https://search.google.com/structured-data/testing-tool
+https://developers.facebook.com/tools/debug/
+- Logo in the topbar instead of text
+
+### Fixed
+- Task card image overflow issue
+
 ## [0.4.0] - 2020-05-20
 ### Added
 - Project type cards with links to the project live demo and source code
@@ -43,3 +55,4 @@ All notable changes to this project will be documented in this file.
 [0.2.0]: https://github.com/snigo/snigo-dev/compare/v0.1.0...v0.2.0
 [0.3.0]: https://github.com/snigo/snigo-dev/compare/v0.2.0...v0.3.0
 [0.4.0]: https://github.com/snigo/snigo-dev/compare/v0.3.0...v0.4.0
+

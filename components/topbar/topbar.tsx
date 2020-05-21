@@ -13,7 +13,9 @@ const Topbar: FunctionComponent<TopbarProps> = ({ fixed }) => {
   return (
     <header className={classList.join(' ')}>
       <div className={css['topbar-content']}>         
-        <div className={`${css['topbar-logo']} ${css[`topbar-logo-${fixed ? 'fixed' : 'idle'}`]}`}>@snigo</div>
+        <div className={`${css['topbar-logo']} ${css[`topbar-logo-${fixed ? 'fixed' : 'idle'}`]}`}>
+          <img src="/images/snigo-logo.svg" alt="@snigo"/>
+        </div>
         <ul className={css['topbar-nav-list']}>
           <li className={css['topbar-nav-list-icon-item']}>
             <a href="https://github.com/snigo" target="_blank" rel="noreferrer noopener">

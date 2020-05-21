@@ -46,10 +46,16 @@
 .topbar-logo {
   position: relative;
 
-  color: #535a5f;
-  font-size: 15px;
+  width: 32px;
+  height: 32px;
 
   transition: all 0.2s ease-in-out;
+
+  & img {
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
 }
 
 .topbar-logo-idle {

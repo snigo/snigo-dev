@@ -1,6 +1,40 @@
 {
   "projects": [
     {
+      "date": "2020-05-21",
+      "version": "0.5.0",
+      "description": "Add rich data to the website",
+      "taskType": "task",
+      "featuredImage": "/images/tasks/101-server-data.svg",
+      "userStories": [
+        "*As user*, I can share website link with additional open graph description",
+        "*As crawler*, I can see rich data script providing basic information about the website"
+      ],
+      "changelog": [
+        {
+          "version": "0.5.0",
+          "date": "2020-05-21",
+          "url": "https://github.com/snigo/snigo-dev/compare/v0.4.0...v0.5.0",
+          "log": {
+            "added": [
+              "Rich data meta: JSON-LD script, open graph and twitter card details. Can be tested [here](https://search.google.com/structured-data/testing-tool) and [here](https://developers.facebook.com/tools/debug/).",
+              "Logo in the topbar instead of text"
+            ],
+            "fixed": [
+              "Task card image overflow issue"
+            ]
+          }
+        }
+      ],
+      "technologies": [
+        "json-ld",
+        "open graph",
+        "seo",
+        "rich data"
+      ],
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.5.0"
+    },
+    {
       "date": "2020-05-20",
       "version": "0.4.0",
       "description": "Build Lapchart - stopwatch with visualisation chart",
@@ -15,7 +49,7 @@
       "changelog": [
         {
           "version": "0.4.0",
-          "date": "2020-05-19",
+          "date": "2020-05-20",
           "url": "https://github.com/snigo/snigo-dev/compare/v0.3.0...v0.4.0",
           "log": {
             "added": [
