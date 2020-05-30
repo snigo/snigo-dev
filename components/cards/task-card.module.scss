@@ -6,6 +6,15 @@
 
   border-radius: 6px;
   box-shadow: 0 0 64px #3f51b52f;
+  opacity: 0;
+
+  animation-name: slide-in;
+  animation-duration: 0.4s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+  animation-play-state: running;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -291,5 +300,17 @@
   
   @media screen and (max-width: 414px) {
     padding: 1em 0.5em;
+  }
+}
+
+@keyframes slide-in {
+  from {
+    top: 56px;
+    opacity: 0;
+  }
+
+  to {
+    top: 0;
+    opacity: 1;
   }
 }

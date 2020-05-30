@@ -1,6 +1,50 @@
 {
   "projects": [
     {
+      "date": "2020-05-29",
+      "version": "0.6.0",
+      "description": "Publish open source npm package",
+      "taskType": "package",
+      "featuredImage": "/images/tasks/038-request.svg",
+      "userStories": [
+        "*As fellow developer*, I can install Color library from [NPM](https://www.npmjs.com/package/@lost-types/color)",
+        "*As fellow developer*, I can install Range library from [NPM](https://www.npmjs.com/package/@lost-types/range)",
+        "*As fellow developer*, I can install Colorista library from [NPM](https://www.npmjs.com/package/@lost-types/colorista)",
+        "*As fellow developer*, I can install MathX library from [NPM](https://www.npmjs.com/package/@lost-types/mathx)",
+        "*As fellow developer*, I can install Publisher library from [NPM](https://www.npmjs.com/package/@lost-types/publisher)",
+        "*As fellow developer*, I can install AliasMap library from [NPM](https://www.npmjs.com/package/@lost-types/alias-map)",
+        "*As @snigo*, I can manage versions, test and build pipeline with lerna.js in single [monorepo](https://github.com/snigo/lost-types)"
+      ],
+      "changelog": [
+        {
+          "version": "0.6.0",
+          "date": "2020-05-29",
+          "url": "https://github.com/snigo/snigo-dev/compare/v0.5.0...v0.6.0",
+          "log": {
+            "added": [
+              "@lost-types collection to NPM",
+              "Slide in animation for task cards"
+            ],
+            "fixed": [
+              "Minor typos"
+            ]
+          }
+        }
+      ],
+      "technologies": [
+        "lerna",
+        "npm",
+        "monorepo",
+        "open source",
+        "animation",
+        "css",
+        "javascript",
+        "tdd"
+      ],
+      "release": "https://github.com/snigo/snigo-dev/releases/tag/v0.6.0",
+      "sourceCode": "https://github.com/snigo/lost-types"
+    },
+    {
       "date": "2020-05-21",
       "version": "0.5.0",
       "description": "Add rich data to the website",

@@ -50,13 +50,12 @@ const Index = () => {
       </Head>
       <Topbar fixed={topbarFixed} />
       <div className="wrapper">
-        <a href="#100DaysOfCode_content_top" id="100DaysOfCode_content_top" ref={topEl} tabIndex={-1} />
-        <h1 className="title">Hi, I'm @snigo<span style={{color: 'var(--colors-blue-50'}}>.</span></h1>
+        <h1 className="title" ref={topEl}>Hi, I'm @snigo<span style={{color: 'var(--colors-blue-50'}}>.</span></h1>
         <p>I've accepted <a href="https://www.100daysofcode.com/" target="_blank" rel="noreferrer noopener" className="fancy-link">#100DaysOfCode</a> challenge and this is my day <span style={{color: 'var(--colors-pink-40'}}>{getChallengeDay()}</span>.</p>
         <hr/>
         <div className="project-grid">
           {
-            projects.map((task) => <TaskCard task={task as DayTask} key={task.date} />)
+            projects.map((task, i) => <TaskCard task={task as DayTask} index={i} key={task.date} />)
           }
         </div>
       </div>

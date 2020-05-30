@@ -7,9 +7,10 @@ import Changelog from './changelog-entry';
 
 interface TaskCardProps {
   task: DayTask,
+  index: number;
 }
 
-const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
+const TaskCard: FunctionComponent<TaskCardProps> = ({ task, index }) => {
   const {
     date,
     featuredImage,
@@ -37,7 +38,7 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
   const dateFormatted = new Intl.DateTimeFormat("en-US", dateFormatOpts).format(_date);
 
   return (
-    <div className={css["task-card"]}>
+    <div className={`${css["task-card"]}  delayed-card`}>
       <div className={css["task-card-featured-image"]}>
         { featuredImage && <img src={featuredImage} alt={description} /> }
       </div>
@@ -135,6 +136,15 @@ const TaskCard: FunctionComponent<TaskCardProps> = ({ task }) => {
           }
         </section>
       </div>
+      <style jsx>
+        {
+          `
+            .delayed-card {
+              animation-delay: ${0.1 * index}s;
+            }
+          `
+        }
+      </style>
     </div>
   );
 };

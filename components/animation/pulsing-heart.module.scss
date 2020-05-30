@@ -1,5 +1,6 @@
 .pulsing-heart {
   position: relative;
+  display: inline-block;
   top: 1px;
   font-style: normal;
   text-decoration: none;
@@ -9,6 +10,6 @@
 
 @keyframes pulse {
   10% {
-    transform: scale(2);
+    transform: scale(1.2);
   }
 }
